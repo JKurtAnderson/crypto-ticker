@@ -30,7 +30,7 @@ public class App
 		while(true) {
 			long startTime = System.currentTimeMillis();
 
-			final float tokenValue = proxy.getTokenValueUSD("btc");
+			final float tokenValue = proxy.getTokenValueUSD(args[0]);
 
 			// Something went wrong getting the token value. Don't update the screen until it works.
 			if (tokenValue != -1) {
